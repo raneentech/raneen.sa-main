@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رنين</title>
+
+  <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link href="./assets/css/aos.css" rel="stylesheet" />
+  <link href="./assets/images/home-two/customer/logoimgsc.png" rel="shortcut icon" type="image/x-icon" />
+
+  <link rel="stylesheet" href="./assets/css/output.css" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+</head>
+
+<body class="home-two box-border">
+
+  <div id="preloader">
+    <div id="container-preloader" class="container-preloader">
+      <div class="animation-preloader">
+        <div class="spinner"></div>
+
+
+        <div class="txt-loading">
+          <span preloader-text="R" class="characters">R</span>
+          <span preloader-text="A" class="characters">A</span>
+          <span preloader-text="N" class="characters">N</span>
+          <span preloader-text="E" class="characters">E</span>
+          <span preloader-text="E" class="characters">E</span>
+          <span preloader-text="N" class="characters">N</span>
+        </div>
+
+      </div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+  </div>
+  <div class="xl:flex w-full justify-center h-24 bg-white fixed top-0 z-20 hidden" dir="rtl">
+    <header class="flex justify-between max-w-[1619px] relative py-6 mx-auto items-center h-full w-full px-5">
+      <div class="flex gap-28 items-center">
+        <a href="#">
+          <img src="./assets/images/home-two/logo.png" width="73px" alt="logo" class="imglogo" />
+        </a>
+        <ul class="flex gap-10 text-paragraph text-base leading-5 font-medium font-inter">
+          <li class="group">
+            <a class="home-two-nav-item leading-5 relative before:content-['الرئيسية'] w-fit flex gap-2 items-center hover:text-purple"
+              href="#"> الرئيسية </a>
+
+          </li>
+          <li>
+            <a href="#" class="home-two-nav-item relative before:content-['المدونة']">المدونة</a>
+          </li>
+          <li>
+            <a class="home-two-nav-item relative before:content-['مهمتنا']" href="#">مهمتنا</a>
+          </li>
+          <li>
+            <a class="home-two-nav-item relative before:content-['البرامج']" href="#">البرامج</a>
+          </li>
+          <li>
+            <a class="home-two-nav-item relative before:content-['المجالات']" href="#">المجالات</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex gap-7 items-center">
+      
+        <a href="#">
+          <div class="home-two-btn-bg py-2.5 group bg-blue-seo border-blue-seo">
+            <span
+              class="text-base text-white group-hover:text-blue-seo transition-all duration-300 font-semibold font-inter relative z-10">
+              تواصل بنا
+            </span>
+            <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path class="group-hover:stroke-blue-seo transition-all duration-300"
+                d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <header class="flex xl:hidden flex-col relative" dir="rtl">
+    <div class="h-16 bg-white flex items-center justify-between fixed top-0 right-0 z-50 w-full px-2.5">
+      <a href="#" width="100px" aria-label="logo">
+        <img src="./assets/images/home-two/logo.png" width="50px" alt="logo" />
+      </a>
+      <button aria-label="mobile-Menu" class="text-main-black text-48 w-6 h-6 toggle_nav_menu"
+        id="mobile_nav_toggle_menu">
+        <svg class="pointer-events-none transition-all duration-300" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+        </svg>
+        <svg class="pointer-events-none hidden transition-all duration-300" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512">
+          <path
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </button>
+    </div>
+    <div class="transition-all duration-300">
+      <div class="w-full h-screen fixed bg-black/80 z-40 -left-full transition-all duration-300 delay-150"
+        id="mobile-nav-div-overlay"></div>
+      <div
+        class="fixed h-screen overflow-y-scroll bg-white w-full top-16 -left-full z-50 transition-all duration-300 delay-0"
+        id="mobile-nav-div">
+        <div class="flex gap-28 flex-col pl-5 pt-5">
+          <ul class="flex gap-5 flex-col text-paragraph text-base leading-5 font-medium font-inter">
+            <li class="group relative">
+              <a
+                class="home-two-nav-item leading-5 relative before:content-['الرئيسية'] w-fit m-nav-dropdown flex items-center gap-2">
+                الرئيسية
+              </a>
+            
+            </li>
+            <li>
+              <a class="home-two-nav-item relative before:content-['المدونة'] w-fit" href="#">
+                المدونة
+              </a>
+            </li>
+            <li>
+              <a class="home-two-nav-item relative before:content-['مهمتنا'] w-fit" href="#">مهمتنا</a>
+            </li>
+            <li class="home-two-nav-item relative before:content-['البرامج'] w-fit">
+              <a href="#">البرامج</a>
+            </li>
+
+            <li>
+              <a class="home-two-nav-item relative before:content-['المجالات'] w-fit" href="#">المجالات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex gap-5 flex-col pl-5 mt-5">
+       
+          <a href="#">
+            <div class="home-two-btn-bg py-2.5 group bg-blue-seo border-blue-seo w-fit">
+              <span
+                class="text-base text-white group-hover:text-blue-seo transition-all duration-300 font-semibold font-inter relative z-10">
+                تواصل بنا
+              </span>
+              <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path class="group-hover:stroke-blue-seo transition-all duration-300"
+                  d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                  stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div>
+        <main class="w-full">
+
+          <section class="w-full bg-blue-seo py-3 relative overflow-hidden pt-28">
+
+            <div class="w-full max-w-[1506px] relative theme-container mx-auto grid grid-cols-6 xl:grid-cols-12 z-10">
+              <img src="./assets/images/home-two/hero-dot-bg.svg" alt="img"
+                class="absolute top-[75px] -left-[145px] moving-h2-hero-main-img" />
+              <div class="col-span-5 my-auto">
+                <h5 class="text-4xl md:text-65 tracking-tight font-semibold text-white pr-2" data-depth="-0.28">
+
+                  <img src="./assets/images/Raneename.png" width="50%" />
+
+                  <br class="hidden md:block" />
+                </h5>
+                <h3 class="text-18 font-medium font-inter text-white mt-5 md:mt-5">
+                  مسرعة وحاضنة معتمدة المنظمات غير الربحية والتعاونية والوقفية
+                </h3>
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-6 mt-5 md:mt-12">
+                  <a href="pricing.html">
+                    <div class="home-two-btn-white group">
+                      <span
+                        class="text-base group-hover:text-white transition-all duration-300 font-semibold font-inter py-1 relative z-10">
+                        الدخول إلى المنصة الإلكترونية
+                      </span>
+                      <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="group-hover:stroke-white stroke-blue-seo transition-all duration-300"
+                          d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </a>
+            
+                </div>
+          
+              </div>
+
+              <img src="./assets/images/home-two/hero-img.png" alt="img"
+                class="col-span-7 self-end relative left-0 2xl:-left-52 bottom-0 moving-h2-hero-main-img" />
+            </div>
+            <div
+              class="rotating_circle z-0 absolute flex justify-center items-center -bottom-4 xl:-bottom-[150px] left-0 xl:-left-20 h-0 w-full xl:w-[880px] 2xl:max-w-[1250px]">
+              <img src="./assets/images/home-two/round-shape-1.svg" alt class="w-full" />
+              <img src="./assets/images/home-two/round-shape-2.svg" alt class="absolute w-10/12" />
+              <img src="./assets/images/home-two/round-shape-3.svg" alt class="absolute w-8/12" />
+              <img src="./assets/images/home-two/round-shape-4.svg" alt class="absolute w-6/12" />
+            </div>
+
+          </section>
+
+
+          <section class="w-full py-16 md:py-32">
+            <div class="w-full theme-container mx-auto flex items-center flex-col">
+         
+              <h1
+                class="max-w-[813px] font-semibold text-4xl sm:text-48 tracking-tight text-app-dark text-center mt-[18px]">
+                لماذا رنين؟
+              </h1>
+              <div class="grid gird-cols-4 md:grid-cols-8 xl:grid-cols-12 gap-[30px] mt-8 md:mt-[70px]">
+
+                <div data-aos="fade-up" class="col-span-4">
+                  <div
+                    class="p-5 md:p-12 relative overflow-hidden rounded-[20px] border-[1.2px] border-purple/10 h2_features_card_bg cursor-pointer group hover:border-purple transition-all duration-300">
+                    <img src="./assets/images/home-two/feature_card_bg.svg" alt class="absolute right-0 bottom-0 z-0" />
+                    <div class="relative z-10">
+                      <a href="service-details.html"
+                        class="w-fit text-24 text-app-dark font-semibold before:block before:w-full before:border-b before:border-app-dark relative overflow-hidden before:absolute border-b border-transparent before:scale-x-0 group-hover:before:scale-x-100 before:transition-all before:duration-300 before:origin-right before:bottom-0">
+                        شراكات تنموية
+                      </a>
+                      <p class="text-paragraph mt-4">
+                        وصول أكبر للمانحين والداعمين وآفاق شراكة واسعة وفاعلة مع القطاعين الحكومي والقطاع الخاص
+                        والمنظمات ذات العلاقة
+                      </p>
+                      <img src="./assets/images/home-two/features/1.svg" alt="img"
+                        class="mt-10 max-w-[310px] w-full object-cover max-h-[300px] overflow-hidden rounded-lg group-hover:scale-105 transition-all duration-300" />
+                    </div>
+                  </div>
+                </div>
+
+
+                <div data-aos="fade-up" data-aos-delay="100" class="col-span-4">
+                  <div
+                    class="p-5 md:p-12 relative overflow-hidden rounded-[20px] border-[1.2px] border-purple/10 h2_features_card_bg cursor-pointer group hover:border-purple transition-all duration-300">
+                    <img src="./assets/images/home-two/feature_card_bg.svg" alt class="absolute right-0 bottom-0 z-0" />
+                    <div class="relative z-10">
+                      <a href="service-details.html"
+                        class="w-fit text-24 text-app-dark font-semibold before:block before:w-full before:border-b before:border-app-dark relative overflow-hidden before:absolute border-b border-transparent before:scale-x-0 group-hover:before:scale-x-100 before:transition-all before:duration-300 before:origin-right before:bottom-0">
+                        التمويل و الدعم
+                      </a>
+                      <p class="text-paragraph mt-4">
+                        قدرة أكبر على جلب التمويل والدعم وتحريك المجتمع لمساندة منظمات القطاع الثالث وتمكينها من القيام
+                        بأنشطتها بفعالية
+                      </p>
+                      <img src="./assets/images/home-two/features/2.svg" alt="img"
+                        class="mt-10 max-w-[310px] w-full object-cover max-h-[300px] overflow-hidden rounded-lg group-hover:scale-105 transition-all duration-300" />
+                    </div>
+                  </div>
+                </div>
+
+
+                <div data-aos="fade-up" data-aos-delay="200" class="col-span-4">
+                  <div
+                    class="p-5 md:p-12 relative overflow-hidden rounded-[20px] border-[1.2px] border-purple/10 h2_features_card_bg cursor-pointer group hover:border-purple transition-all duration-300">
+                    <img src="./assets/images/home-two/feature_card_bg.svg" alt class="absolute right-0 bottom-0 z-0" />
+                    <div class="relative z-10">
+                      <a href="service-details.html"
+                        class="w-fit text-24 text-app-dark font-semibold before:block before:w-full before:border-b before:border-app-dark relative overflow-hidden before:absolute border-b border-transparent before:scale-x-0 group-hover:before:scale-x-100 before:transition-all before:duration-300 before:origin-right before:bottom-0">
+                        تحقيق الأثر المستدام
+                      </a>
+                      <p class="text-paragraph mt-4">
+                        تحقيق الأثر المجتمعي المستدام وزيادة مساهمة منظمات القطاع الثالث في التنمية الاجتماعية في
+                        المملكة
+                      </p>
+                      <img src="./assets/images/home-two/features/3.svg" alt="img"
+                        class="mt-10 max-w-[310px] w-full object-cover max-h-[300px] overflow-hidden rounded-lg group-hover:scale-105 transition-all duration-300" />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+          <section class="w-full py-16 md:py-[130px]">
+            <div class="theme-container mx-auto w-full">
+              <div class="grid grid-cols-6 lg:grid-cols-12 gap-10 lg:gap-0">
+                <div class="col-span-6 relative">
+                  <img src="./assets/images/home-two/about.webp" alt="img" class="mt-9" />
+
+                  <div class="d-flex justify-center">
+
+                    <div
+                      class="p-3 sm:p-5 rounded-[30px] right-0 sm:right-32 bg-blue-seo absolute top-0 moving-h2-hero-main-img min-w-[180px]">
+                      <!-- <p class="text-sm font-medium leading-7 w-full text-center text-white">
+                      مستفيد
+                    </p> -->
+                      <h1 class="text-[42px] leading-[56px] tracking-tight font-semibold w-full text-center text-white"
+                        data-scroll-qs="scroll" data-count-qs="163" data-type-qs="" data-speed-qs="2000"></h1>
+                      <p class="text-base leading-6 text-white flex w-full justify-center items-center gap-1">
+                        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M3.65692 0.828427H9.31378M9.31378 0.828427V6.48528M9.31378 0.828427L0.828497 9.31371"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>مستفيد</span>
+                      </p>
+                    </div>
+
+
+
+
+                  </div>
+
+
+        
+                </div>
+                <div class="col-span-6 lg:pl-[87px]">
+                  <!-- <div
+                    class="py-1.5 md:py-3 px-5 rounded-[30px] border-[1.2px] border-blue-seo/30 w-fit bg-blue-seo/10">
+                    <h1 class="text-base tracking-tight font-medium text-purple leading-5">
+                      About Company
+                    </h1>
+                  </div> -->
+                  <h1 class="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
+                   من نحن
+                  </h1>
+                  <p class="mt-5 md:mt-10 text-paragraph">
+                    شركة رنين التنمية لخدمات الأعمال هي شركة ذات مسؤولية محدودة تعمل في مجال الاستشارات الإدارية العليا تخصصت في رفد القطاع غير الربحي، حيث نعمل كشريك تحول جنبًا إلى جنب مع مكونات القطاع غير الربحي لتعزيز بنائها المؤسسي وتقديم حلول إدارية وتقنية واستشارية مبتكرة تسهم في استدامتها ونموها.
+                  </p>
+
+                  <h1 class="text-24 md:text-48 font-semibold text-main-black mt-2.5 md:mt-5">
+                    غرضنا
+                   </h1>
+                   <p class="mt-5 md:mt-10 text-paragraph">
+                    نسعى في شركة رنين التنمية لخدمات الأعمال إلى تمكين المنظمات العاملة في القطاع غير الربحي من تحقيق أهدافها بكفاءة عالية من خلال تقديم مجموعة شاملة من الخدمات الاستشارية التي تضمن لها الازدهار والتأثير الإيجابي المستدام في المجتمعات ولدى الفئات التي تخدمها.
+                   </p>
+ 
+
+                  <div class="w-full grid grid-cols-1 sm:grid-cols-2 mt-10 gap-8 md:gap-[70px]">
+                    <div class="grid-cols-1">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z"
+                          fill="#5D51F2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M14.4605 6.40802C14.7874 6.66232 14.8463 7.13353 14.592 7.46049L10.585 12.6123C9.9613 13.4143 8.78809 13.5183 8.03296 12.8387L5.49828 10.5575C5.1904 10.2804 5.16544 9.80619 5.44254 9.49831C5.71963 9.19043 6.19385 9.16547 6.50173 9.44256L9.03641 11.7238C9.14429 11.8209 9.31189 11.806 9.40099 11.6914L13.408 6.53958C13.6623 6.21262 14.1335 6.15372 14.4605 6.40802Z"
+                          fill="white" />
+                      </svg>
+                      <h1 class="text-18 text-main-black font-semibold mt-4">
+                        رؤيتنا
+                      </h1>
+                      <p class="text-paragraph mt-3">
+                        نطمح في شركة رنين التنمية لخدمات الأعمال إلى أن نكون شريك التحول الاستراتيجي للمنظمات العاملة في القطاع غير الربحي بالمملكة العربية السعودية والمساهمة في إحداث تغيير إيجابي ملموس عبر مجتمع حيوي.
+
+                      </p>
+                    </div>
+                    <div class="grid-cols-1">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10Z"
+                          fill="#5D51F2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M14.4605 6.40802C14.7874 6.66232 14.8463 7.13353 14.592 7.46049L10.585 12.6123C9.9613 13.4143 8.78809 13.5183 8.03296 12.8387L5.49828 10.5575C5.1904 10.2804 5.16544 9.80619 5.44254 9.49831C5.71963 9.19043 6.19385 9.16547 6.50173 9.44256L9.03641 11.7238C9.14429 11.8209 9.31189 11.806 9.40099 11.6914L13.408 6.53958C13.6623 6.21262 14.1335 6.15372 14.4605 6.40802Z"
+                          fill="white" />
+                      </svg>
+                      <h1 class="text-18 text-main-black font-semibold mt-4">
+                        رسالتنا
+                      </h1>
+                      <p class="text-paragraph mt-3">
+                        نعمل على تصميم تدخلات تنموية مستدامة ذات تأثير إيجابي تتلاءم مع السياقات الوطنية والتوجهات التنموية للمملكة العربية السعودية من خلال تقديم منتجات مستدامة ومسارات عمل متكاملة وكيانات مبتكرة فاعلة.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- <div class="flex flex-col sm:flex-row gap-6 md:gap-12 mt-6 md:mt-12 items-center">
+                    <a href="blog.html">
+                      <div class="home-two-btn-bg py-3 group bg-blue-seo border-blue-seo">
+                        <span
+                          class="text-base text-white group-hover:text-blue-seo transition-all duration-300 font-semibold font-inter relative z-10">
+                          تعرف علينا اكثر
+                        </span>
+                        <svg class="relative z-10" width="7" height="12" viewBox="0 0 7 12" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path class="group-hover:stroke-blue-seo transition-all duration-300"
+                            d="M1.10254 10.5L4.89543 6.70711C5.22877 6.37377 5.39543 6.20711 5.39543 6C5.39543 5.79289 5.22877 5.62623 4.89543 5.29289L1.10254 1.5"
+                            stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </a>
+                
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section class="max-w-full overflow-hidden mb-5 pb-5">
+            <div class="theme-container mx-auto w-screen flex items-center b-5 pb-5">
+              <div class="flex gap-5 lg:gap-[154px] w-full flex-col lg:flex-row">
+
+
+                <div class="w-full flex-1 -mr-[300px] max-w-full overflow-hidden">
+                  <div class="swiper partnerSwiper">
+
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="./assets/images/home-two/customer/logoimgsc.png" alt />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="w-full max-w-[176px] text-base font-semibold text-main-black">
+                  شركاء النجاح
+                </p>
+
+              </div>
+            </div>
+          </section>
+
+
+          <section class="w-full py-16 md:py-[130px] -top-2/4 bg-black-seo relative overflow-hidden">
+            <!-- <div>
+              <img src="./assets/images/home-two/shape-1.svg" alt="bg-shape"
+                class="absolute bottom-20 moving-anim tran" />
+            </div> -->
+
+            <!-- <div class="absolute -top-1 -left-1 flex justify-center items-center w-2 h-2 z-0">
+              <div class="animated_circle bg-white/5"></div>
+              <div class="animated_circle2 bg-white/5"></div>
+              <div class="animated_circle3 bg-white/5"></div>
+              <div class="animated_circle4 bg-white/5"></div>
+            </div> -->
+
+            <div class="theme-container w-full mx-auto relative z-10">
+              <div class="w-full flex gap-5 flex-col items-center">
+                <!-- <p class="px-5 py-1 text-white rounded-[30px] bg-blue-seo font-medium">
+                 برنامج رنين
+                </p> -->
+                <h1 class=" text-24 md:text-48 font-semibold max-w-[684px] w-full text-center">
+                  برنامج تسريع نمو المنظمات غير الربحية
+                </h1>
+                <p class="">مجموعة عملية ومتكاملة من التدخلات المتخصصة والدعم الفني لمساعدة المنظمات الناشئة على النمو
+                  المتسارع للوفاء برسالتها وتحقيق النفع المجتمعي المستدام.</p>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-[30px] mt-7 md:mt-[70px]">
+
+                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="100"
+                  class="col-span-1 p-5 md:p-[50px] rounded-3xl flex flex-col md:flex-row gap-[50px] relative overflow-hidden group border border-white/5 transition-all duration-300 before:inline-block before:w-[1000px] before:h-[1000px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[1000px] before:-right-[1000px] before:transition-all before:duration-1000 hover:before:-bottom-[300px] hover:before:-right-[100px] back-card">
+
+                  <div class="hidden absolute -bottom-1 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0 ">
+                    <div class="animated_circle_sm bg-white/10"></div>
+                    <div class="animated_circle_sm2 bg-white/10"></div>
+                    <div class="animated_circle_sm3 bg-white/10"></div>
+                    <div class="animated_circle_sm4 bg-white/10"></div>
+                  </div>
+                  <div class="relative z-10">
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.25 15.25H42.75M15.25 29H29M40 42.75L48.25 56.5M18 42.75L9.75 56.5M29 42.75V51M48.25 1.5L9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75L1.5 34.5C1.5 39.0563 5.19365 42.75 9.75 42.75L48.25 42.75C52.8063 42.75 56.5 39.0563 56.5 34.5L56.5 9.75C56.5 5.19366 52.8064 1.5 48.25 1.5Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="relative z-10">
+                    <h1 class="group-hover:text-white font-semibold text-22 text-white">
+                      بناء مؤسسي
+                    </h1>
+                    <p class="group-hover:text-white text-white/50 transition-all duration-300 mt-4">
+                      تعزيز البناء المؤسسي لمنظمات القطاع الثالث وتوفير مكتبة مرجعية من السياسات والإجراءات الإدارية
+                      والمالية الأساسية وتكييفها بما يتناسب مع احتياجات كل منظمة
+                    </p>
+                    <!-- <a href="service-details.html">
+                    <div class="flex items-center gap-2 group mt-4">
+                      <span
+                        class="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                        Read More
+                      </span>
+                      <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                          stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </div>
+                  </a> -->
+                  </div>
+                </div>
+
+
+
+                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="100"
+                  class="col-span-1 p-5 md:p-[50px] rounded-3xl flex flex-col md:flex-row gap-[50px] relative overflow-hidden group border border-white/5 transition-all duration-300 before:inline-block before:w-[1000px] before:h-[1000px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[1000px] before:-right-[1000px] before:transition-all before:duration-1000 hover:before:-bottom-[300px] hover:before:-right-[100px] back-card">
+
+                  <div
+                    class="hidden absolute -bottom-1 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                    <div class="animated_circle_sm bg-white/10"></div>
+                    <div class="animated_circle_sm2 bg-white/10"></div>
+                    <div class="animated_circle_sm3 bg-white/10"></div>
+                    <div class="animated_circle_sm4 bg-white/10"></div>
+                  </div>
+                  <div class="relative z-10">
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.25 15.25H42.75M15.25 29H29M40 42.75L48.25 56.5M18 42.75L9.75 56.5M29 42.75V51M48.25 1.5L9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75L1.5 34.5C1.5 39.0563 5.19365 42.75 9.75 42.75L48.25 42.75C52.8063 42.75 56.5 39.0563 56.5 34.5L56.5 9.75C56.5 5.19366 52.8064 1.5 48.25 1.5Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="relative z-10">
+                    <h1 class="group-hover:text-white font-semibold text-22 text-white">
+                      تأهيل نوعي
+                    </h1>
+                    <p class="group-hover:text-white text-white/50 transition-all duration-300 mt-4">
+                      مجموعة متكاملة من الورش التدريبية ذات المسار السريع باستخدام مواد متخصصة وأدوات تطبيقية تتلاءم مع
+                      منظمات القطاع الثالث الناشئة
+                    </p>
+                    <!-- <a href="service-details.html">
+                      <div class="flex items-center gap-2 group mt-4">
+                        <span
+                          class="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                          Read More
+                        </span>
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                            stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </a> -->
+                  </div>
+                </div>
+
+
+                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="200"
+                  class="col-span-1 p-5 md:p-[50px] rounded-3xl flex flex-col md:flex-row gap-[50px] relative overflow-hidden group border border-white/5 transition-all duration-300 before:inline-block before:w-[1000px] before:h-[1000px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[1000px] before:-right-[1000px] before:transition-all before:duration-1000 hover:before:-bottom-[300px] hover:before:-right-[100px] back-card">
+
+                  <div
+                    class="hidden absolute -bottom-1 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                    <div class="animated_circle_sm bg-white/10"></div>
+                    <div class="animated_circle_sm2 bg-white/10"></div>
+                    <div class="animated_circle_sm3 bg-white/10"></div>
+                    <div class="animated_circle_sm4 bg-white/10"></div>
+                  </div>
+                  <div class="relative z-10">
+                    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M41.833 51.0001V41.8334H50.9997" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path d="M5.16602 14.3331L14.3327 14.3331L14.3327 5.16644" stroke="white" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M34.958 21.2081L21.208 34.9582" stroke="white" stroke-width="2" stroke-linecap="round" />
+                      <path
+                        d="M23.5 14.3333L33.0074 4.82589C35.3505 2.48275 39.1495 2.48275 41.4926 4.82589L51.3407 14.674C53.6839 17.0171 53.6839 20.8161 51.3407 23.1593L41.8333 32.6667"
+                        stroke="white" stroke-width="2" stroke-linecap="round" />
+                      <path
+                        d="M32.6661 41.8332L23.1587 51.3406C20.8155 53.6838 17.0165 53.6838 14.6734 51.3406L4.82528 41.4925C2.48213 39.1494 2.48213 35.3504 4.82528 33.0072L14.3327 23.4998"
+                        stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                  </div>
+                  <div class="relative z-10">
+                    <h1 class="group-hover:text-white font-semibold text-22 text-white">
+                      بوابة إلكترونية
+                    </h1>
+                    <p class="group-hover:text-white text-white/50 transition-all duration-300 mt-4">
+                      بالشراكة مع بورتال 365 نوفر إمكانية الدخول على نظام إدارة المشاريع التنموية الذي تم إعداده وفق
+                      أفضل الممارسات العالمية في العمل التنموي
+                    </p>
+                    <!-- <a href="service-details.html">
+                      <div class="flex items-center gap-2 group mt-4">
+                        <span
+                          class="font-medium text-white leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                          Read More
+                        </span>
+                        <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                            stroke="#ffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                    </a> -->
+                  </div>
+                </div>
+
+
+
+                <div data-aos-duration="1000" data-aos="fade-left" data-aos-delay="100"
+                  class="col-span-1 p-5 md:p-[50px] rounded-3xl flex flex-col md:flex-row gap-[50px] relative overflow-hidden group border border-white/5 transition-all duration-300 before:inline-block before:w-[1000px] before:h-[1000px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[1000px] before:-right-[1000px] before:transition-all before:duration-1000 hover:before:-bottom-[300px] hover:before:-right-[100px] back-card">
+
+                  <div
+                    class="hidden absolute -bottom-1 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                    <div class="animated_circle_sm bg-white/10"></div>
+                    <div class="animated_circle_sm2 bg-white/10"></div>
+                    <div class="animated_circle_sm3 bg-white/10"></div>
+                    <div class="animated_circle_sm4 bg-white/10"></div>
+                  </div>
+                  <div class="relative z-10">
+                    <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15.25 15.25H42.75M15.25 29H29M40 42.75L48.25 56.5M18 42.75L9.75 56.5M29 42.75V51M48.25 1.5L9.75 1.5C5.19365 1.5 1.5 5.19365 1.5 9.75L1.5 34.5C1.5 39.0563 5.19365 42.75 9.75 42.75L48.25 42.75C52.8063 42.75 56.5 39.0563 56.5 34.5L56.5 9.75C56.5 5.19366 52.8064 1.5 48.25 1.5Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="relative z-10">
+                    <h1 class="group-hover:text-white font-semibold text-22 text-white">
+                      مساندة وتوجيه
+                    </h1>
+                    <p class="group-hover:text-white text-white/50 transition-all duration-300 mt-4">
+                      تحصل المنظمات على مساندة فنية أثناء فترة التحاقها بالبرنامج وذلك بواسطة مجموعة من أفضل خبراء في
+                      العمل التنموي
+                    </p>
+                   
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="pt-16 md:pt-[130px]">
+                <div class="flex flex-col sm:flex-row w-full justify-between items-end mt-5">
+                  <h1 class="max-w-[660px] text-24 sm:text-48 text-white font-semibold">
+                    مجالات عملنا
+                  </h1>
+                  <div class="flex gap-2.5">
+                    <button
+                      class="h2-case-study-next w-8 h-8 sm:w-11 sm:h-11 rounded-full border-[1.5px] border-white/10 flex items-center justify-center overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-blue-seo before:bg-blue-seo relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
+                      <svg class="relative z-10 pointer-events-none" width="16" height="13" viewBox="0 0 16 13"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.25 12L1 6.75M1 6.75L6.25 1.5M1 6.75L15 6.75" stroke="white" stroke-opacity="0.55"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                    <button
+                      class="h2-case-study-prev rotate-180 w-8 h-8 sm:w-11 sm:h-11 rounded-full border-[1.5px] border-white/10 flex items-center justify-center overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-blue-seo before:bg-blue-seo relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
+                      <svg class="relative z-10 pointer-events-none" width="16" height="13" viewBox="0 0 16 13"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.25 12L1 6.75M1 6.75L6.25 1.5M1 6.75L15 6.75" stroke="white" stroke-opacity="0.55"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="swiper case_study_slider mt-10 md:mt-16 overflow-hidden">
+                  <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                      <div
+                        class="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
+                        <div class="px-2 md:px-10 relative z-10">
+                          <p
+                            class="leading-6 font-semibold text-blue-seo group-hover:text-white delay-300 transition-all duration-300 ease-in-out">
+                           عنوان 
+                          </p>
+                          <a href>
+                            <h1
+                              class="text-24 text-main-black font-semibold pt-1 group-hover:text-white transition-all duration-300 underlines">
+                             الوصف
+                            </h1>
+                          </a>
+                        </div>
+                        <img src="./assets/images/home-two/case_study/2.svg" alt
+                          class="max-w-[390px] w-full rounded-2xl mt-10 relative z-10" />
+                        <div class="px-10 flex justify-between relative z-10 mt-4">
+                          <a href="service-details.html">
+                            <div class="flex items-center gap-2 group">
+                              <span
+                                class="transition-all duration-300 font-medium group-hover:text-white text-paragraph leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                               مشاركة المجال
+                              </span>
+                              <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-white transition-all duration-300"
+                                  d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                                  stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </a>
+                          <button aria-label="share">
+                            <svg class width="22" height="22" viewBox="0 0 22 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:stroke-white transition-all duration-300"
+                                d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
+                                stroke="#5D51F2" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <div
+                          class="hidden absolute bottom-10 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                          <div class="animated_circle_sm bg-white/10"></div>
+                          <div class="animated_circle_sm2 bg-white/10"></div>
+                          <div class="animated_circle_sm3 bg-white/10"></div>
+                          <div class="animated_circle_sm4 bg-white/10"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div
+                        class="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
+                        <div class="px-2 md:px-10 relative z-10">
+                          <p
+                            class="leading-6 font-semibold text-blue-seo group-hover:text-white delay-300 transition-all duration-300 ease-in-out">
+                           عنوان 
+                          </p>
+                          <a href>
+                            <h1
+                              class="text-24 text-main-black font-semibold pt-1 group-hover:text-white transition-all duration-300 underlines">
+                             الوصف
+                            </h1>
+                          </a>
+                        </div>
+                        <img src="./assets/images/home-two/case_study/2.svg" alt
+                          class="max-w-[390px] w-full rounded-2xl mt-10 relative z-10" />
+                        <div class="px-10 flex justify-between relative z-10 mt-4">
+                          <a href="service-details.html">
+                            <div class="flex items-center gap-2 group">
+                              <span
+                                class="transition-all duration-300 font-medium group-hover:text-white text-paragraph leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                               مشاركة المجال
+                              </span>
+                              <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-white transition-all duration-300"
+                                  d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                                  stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </a>
+                          <button aria-label="share">
+                            <svg class width="22" height="22" viewBox="0 0 22 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:stroke-white transition-all duration-300"
+                                d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
+                                stroke="#5D51F2" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <div
+                          class="hidden absolute bottom-10 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                          <div class="animated_circle_sm bg-white/10"></div>
+                          <div class="animated_circle_sm2 bg-white/10"></div>
+                          <div class="animated_circle_sm3 bg-white/10"></div>
+                          <div class="animated_circle_sm4 bg-white/10"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                      <div
+                        class="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
+                        <div class="px-2 md:px-10 relative z-10">
+                          <p
+                            class="leading-6 font-semibold text-blue-seo group-hover:text-white delay-300 transition-all duration-300 ease-in-out">
+                           عنوان 
+                          </p>
+                          <a href>
+                            <h1
+                              class="text-24 text-main-black font-semibold pt-1 group-hover:text-white transition-all duration-300 underlines">
+                             الوصف
+                            </h1>
+                          </a>
+                        </div>
+                        <img src="./assets/images/home-two/case_study/2.svg" alt
+                          class="max-w-[390px] w-full rounded-2xl mt-10 relative z-10" />
+                        <div class="px-10 flex justify-between relative z-10 mt-4">
+                          <a href="service-details.html">
+                            <div class="flex items-center gap-2 group">
+                              <span
+                                class="transition-all duration-300 font-medium group-hover:text-white text-paragraph leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                               مشاركة المجال
+                              </span>
+                              <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-white transition-all duration-300"
+                                  d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                                  stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </a>
+                          <button aria-label="share">
+                            <svg class width="22" height="22" viewBox="0 0 22 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:stroke-white transition-all duration-300"
+                                d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
+                                stroke="#5D51F2" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <div
+                          class="hidden absolute bottom-10 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                          <div class="animated_circle_sm bg-white/10"></div>
+                          <div class="animated_circle_sm2 bg-white/10"></div>
+                          <div class="animated_circle_sm3 bg-white/10"></div>
+                          <div class="animated_circle_sm4 bg-white/10"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div
+                        class="bg-white rounded-[20px] pt-7 pb-5 px-2.5 relative group overflow-hidden transition-all duration-300 before:inline-block before:w-[800px] before:h-[800px] before:rounded-full before:bg-blue-seo before:absolute before:z-0 z-10 before:-bottom-[800px] before:-right-[800px] before:transition-all before:duration-1000 hover:before:-bottom-[150px] hover:before:-right-[150px]">
+                        <div class="px-2 md:px-10 relative z-10">
+                          <p
+                            class="leading-6 font-semibold text-blue-seo group-hover:text-white delay-300 transition-all duration-300 ease-in-out">
+                           عنوان 
+                          </p>
+                          <a href>
+                            <h1
+                              class="text-24 text-main-black font-semibold pt-1 group-hover:text-white transition-all duration-300 underlines">
+                             الوصف
+                            </h1>
+                          </a>
+                        </div>
+                        <img src="./assets/images/home-two/case_study/2.svg" alt
+                          class="max-w-[390px] w-full rounded-2xl mt-10 relative z-10" />
+                        <div class="px-10 flex justify-between relative z-10 mt-4">
+                          <a href="service-details.html">
+                            <div class="flex items-center gap-2 group">
+                              <span
+                                class="transition-all duration-300 font-medium group-hover:text-white text-paragraph leading-5 font-inter border-b border-transparent before:inline-block before:border-white before:content-['Read More'] before:text-white before:border-b before:absolute before:bottom-0 before:transition-all before:duration-300 before:w-0 hover:before:w-full before:overflow-hidden before:h-5 relative">
+                               مشاركة المجال
+                              </span>
+                              <svg width="7" height="11" viewBox="0 0 7 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:stroke-white transition-all duration-300"
+                                  d="M1.5 10L5.29289 6.20711C5.62623 5.87377 5.79289 5.70711 5.79289 5.5C5.79289 5.29289 5.62623 5.12623 5.29289 4.79289L1.5 1"
+                                  stroke="#6D6D6D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </div>
+                          </a>
+                          <button aria-label="share">
+                            <svg class width="22" height="22" viewBox="0 0 22 22" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path class="group-hover:stroke-white transition-all duration-300"
+                                d="M7.63118 9.43441C7.05656 8.2874 5.87023 7.5 4.5 7.5C2.567 7.5 1 9.067 1 11C1 12.933 2.567 14.5 4.5 14.5C5.87023 14.5 7.05656 13.7126 7.63118 12.5656M7.63118 9.43441C7.86718 9.90549 8 10.4372 8 11C8 11.5628 7.86718 12.0945 7.63118 12.5656M7.63118 9.43441L14.3688 6.06559M7.63118 12.5656L14.3688 15.9344M14.3688 6.06559C14.9434 7.2126 16.1298 8 17.5 8C19.433 8 21 6.433 21 4.5C21 2.567 19.433 1 17.5 1C15.567 1 14 2.567 14 4.5C14 5.06276 14.1328 5.59451 14.3688 6.06559ZM14.3688 15.9344C14.1328 16.4055 14 16.9372 14 17.5C14 19.433 15.567 21 17.5 21C19.433 21 21 19.433 21 17.5C21 15.567 19.433 14 17.5 14C16.1298 14 14.9434 14.7874 14.3688 15.9344Z"
+                                stroke="#5D51F2" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                          </button>
+                        </div>
+
+                        <div
+                          class="hidden absolute bottom-10 -right-1 group-hover:flex justify-center items-center w-2 h-2 z-0">
+                          <div class="animated_circle_sm bg-white/10"></div>
+                          <div class="animated_circle_sm2 bg-white/10"></div>
+                          <div class="animated_circle_sm3 bg-white/10"></div>
+                          <div class="animated_circle_sm4 bg-white/10"></div>
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+          <section class="w-full py-16 md:py-32">
+            <div class="w-full theme-container mx-auto flex items-center flex-col">
+              <!-- <div
+                class="px-5 py-1.5 md:py-3 md:px-7 rounded-[30px] border-[1.2px] border-blue-seo/30 w-fit bg-blue-seo/10">
+                <h1 class="text-base tracking-tight font-medium text-purple leading-5">
+                  تدوينات
+                </h1>
+              </div> -->
+              <h1
+                class="max-w-[813px] font-semibold text-24 sm:text-48 tracking-tight text-app-dark text-center mt-2.5 md:mt-[18px]">
+                أخبار ومقالات رنين
+              </h1>
+              <div class="grid grid-cols-4 xl:grid-cols-8 gap-[90px] mt-0 md:mt-[70px] md:px-28">
+                <div class="col-span-2 hidden xl:grid grid-cols-2 gap-2.5">
+
+                  <div class="col-span-1 relative my-auto">
+                    <div class="overlay-vSlider"></div>
+                    <div class="swiper vsliderSm max-h-[312px] overflow-hidden">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn1.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn2.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn3.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn4.png" alt />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-span-1 relative hidden md:block">
+                    <div class="overlay-vSlider"></div>
+                    <div class="swiper vslider max-h-[472px] overflow-hidden">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn1.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn2.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn3.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/rn4.png" alt />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="col-span-4 mt-10">
+                  <div class="swiper h2-testimonial-slider overflow-hidden">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div
+                          class="col-span-1 p-5 md:p-[54px] rounded-3xl flex flex-col items-center relative overflow-hidden group border border-white/5 bg-blue-seo">
+
+                          <div class="absolute -bottom-1 -right-1 flex justify-center items-center w-2 h-2 z-0">
+                            <div class="animated_circle_sm bg-white/10"></div>
+                            <div class="animated_circle_sm2 bg-white/10"></div>
+                            <div class="animated_circle_sm3 bg-white/10"></div>
+                            <div class="animated_circle_sm4 bg-white/10"></div>
+                          </div>
+                          <div class="relative z-10">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_460_21874)">
+                                <path
+                                  d="M55.9702 11.9941C53.2589 8.94831 49.9682 7.4039 46.1898 7.4039C42.7939 7.4039 39.9151 8.61316 37.6326 10.9979C35.3647 13.3675 34.2147 16.3106 34.2147 19.7458C34.2147 22.9922 35.3763 25.8849 37.6672 28.344C39.688 30.5134 42.2336 31.8933 45.2472 32.4556C44.7202 36.4512 41.1881 40.0677 34.7278 43.2188L33.5645 43.7864L38.3341 52.5919L39.4108 52.0461C53.0727 45.121 59.9997 35.3341 59.9997 22.9571C59.9997 18.6871 58.6441 14.9987 55.9702 11.9941ZM39.3601 49.2765L36.9704 44.8653C44.1567 41.0998 47.7976 36.5732 47.7976 31.3977V30.2896L46.6966 30.1649C43.7312 29.8292 41.3715 28.6805 39.4828 26.6528C37.6077 24.6398 36.6961 22.3807 36.6961 19.7458C36.6961 16.9324 37.5889 14.6323 39.4252 12.7134C41.2467 10.8102 43.4595 9.88499 46.1899 9.88499C49.2725 9.88499 51.8654 11.1145 54.1167 13.6437C56.4058 16.2157 57.5186 19.2621 57.5186 22.957C57.5186 28.6297 55.9213 33.751 52.7711 38.1787C49.7653 42.4033 45.257 46.1331 39.3601 49.2765Z"
+                                  fill="white" />
+                                <path
+                                  d="M22.3404 11.9886C19.599 8.94656 16.2947 7.40402 12.519 7.40402C9.11988 7.40402 6.25406 8.61551 4.0016 11.0047C1.76848 13.3733 0.636094 16.3143 0.636094 19.746C0.636094 22.9922 1.79766 25.885 4.08832 28.3441C6.10488 30.5088 8.61996 31.8874 11.5775 32.4524C11.0569 36.4509 7.55414 40.0692 1.14562 43.221L0 43.7842L4.65094 52.596L5.73832 52.0473C19.4621 45.1226 26.4207 35.3352 26.4207 22.9572C26.4206 18.6838 25.0477 14.9934 22.3404 11.9886ZM5.70223 49.2724L3.3777 44.8681C10.5118 41.1011 14.1267 36.5734 14.1267 31.3977V30.292L13.0282 30.1652C10.1236 29.8301 7.79297 28.6812 5.90367 26.6528C4.02855 24.64 3.11719 22.3807 3.11719 19.746C3.11719 16.9289 3.99703 14.6263 5.80676 12.7069C7.5968 10.8082 9.79254 9.88512 12.519 9.88512C15.6047 9.88512 18.2146 11.1164 20.497 13.6495C22.8135 16.2202 23.9395 19.2648 23.9395 22.9572C23.9395 28.6289 22.3352 33.7495 19.1708 38.1768C16.152 42.4002 11.6243 46.1293 5.70223 49.2724Z"
+                                  fill="white" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_460_21874">
+                                  <rect width="60" height="60" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <div class="relative z-10">
+                            <h1 class="text-white text-18 md:text-20 font-semibold mt-4 w-full text-center">
+                              المنظمات غير الربحية شريك رئيسي في التنمية
+                            </h1>
+                            <div class="flex items-center gap-5 mt-5 md:mt-10 mx-auto w-fit">
+                              <!-- <div class="w-14 h-14 rounded-full overflow-hidden">
+                                <img src="./assets/images/home-two/testimonial/sm1.webp" alt
+                                  class="w-full object-cover" />
+                              </div> -->
+                              <div>
+                                <h1 class="text-white ">
+                                  يناير 30, 2023
+                                </h1>
+                                <p class="text-sm leading-7 font-medium text-white">
+                                  by المحرر
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="col-span-1 p-5 md:p-[54px] rounded-3xl flex flex-col items-center relative overflow-hidden group border border-white/5 bg-blue-seo">
+
+                          <div class="absolute -bottom-1 -right-1 flex justify-center items-center w-2 h-2 z-0">
+                            <div class="animated_circle_sm bg-white/10"></div>
+                            <div class="animated_circle_sm2 bg-white/10"></div>
+                            <div class="animated_circle_sm3 bg-white/10"></div>
+                            <div class="animated_circle_sm4 bg-white/10"></div>
+                          </div>
+                          <div class="relative z-10">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g clip-path="url(#clip0_460_21874)">
+                                <path
+                                  d="M55.9702 11.9941C53.2589 8.94831 49.9682 7.4039 46.1898 7.4039C42.7939 7.4039 39.9151 8.61316 37.6326 10.9979C35.3647 13.3675 34.2147 16.3106 34.2147 19.7458C34.2147 22.9922 35.3763 25.8849 37.6672 28.344C39.688 30.5134 42.2336 31.8933 45.2472 32.4556C44.7202 36.4512 41.1881 40.0677 34.7278 43.2188L33.5645 43.7864L38.3341 52.5919L39.4108 52.0461C53.0727 45.121 59.9997 35.3341 59.9997 22.9571C59.9997 18.6871 58.6441 14.9987 55.9702 11.9941ZM39.3601 49.2765L36.9704 44.8653C44.1567 41.0998 47.7976 36.5732 47.7976 31.3977V30.2896L46.6966 30.1649C43.7312 29.8292 41.3715 28.6805 39.4828 26.6528C37.6077 24.6398 36.6961 22.3807 36.6961 19.7458C36.6961 16.9324 37.5889 14.6323 39.4252 12.7134C41.2467 10.8102 43.4595 9.88499 46.1899 9.88499C49.2725 9.88499 51.8654 11.1145 54.1167 13.6437C56.4058 16.2157 57.5186 19.2621 57.5186 22.957C57.5186 28.6297 55.9213 33.751 52.7711 38.1787C49.7653 42.4033 45.257 46.1331 39.3601 49.2765Z"
+                                  fill="white" />
+                                <path
+                                  d="M22.3404 11.9886C19.599 8.94656 16.2947 7.40402 12.519 7.40402C9.11988 7.40402 6.25406 8.61551 4.0016 11.0047C1.76848 13.3733 0.636094 16.3143 0.636094 19.746C0.636094 22.9922 1.79766 25.885 4.08832 28.3441C6.10488 30.5088 8.61996 31.8874 11.5775 32.4524C11.0569 36.4509 7.55414 40.0692 1.14562 43.221L0 43.7842L4.65094 52.596L5.73832 52.0473C19.4621 45.1226 26.4207 35.3352 26.4207 22.9572C26.4206 18.6838 25.0477 14.9934 22.3404 11.9886ZM5.70223 49.2724L3.3777 44.8681C10.5118 41.1011 14.1267 36.5734 14.1267 31.3977V30.292L13.0282 30.1652C10.1236 29.8301 7.79297 28.6812 5.90367 26.6528C4.02855 24.64 3.11719 22.3807 3.11719 19.746C3.11719 16.9289 3.99703 14.6263 5.80676 12.7069C7.5968 10.8082 9.79254 9.88512 12.519 9.88512C15.6047 9.88512 18.2146 11.1164 20.497 13.6495C22.8135 16.2202 23.9395 19.2648 23.9395 22.9572C23.9395 28.6289 22.3352 33.7495 19.1708 38.1768C16.152 42.4002 11.6243 46.1293 5.70223 49.2724Z"
+                                  fill="white" />
+                              </g>
+                              <defs>
+                                <clipPath id="clip0_460_21874">
+                                  <rect width="60" height="60" fill="white" />
+                                </clipPath>
+                              </defs>
+                            </svg>
+                          </div>
+                          <div class="relative z-10">
+                            <h1 class="text-white text-18 md:text-20 font-semibold mt-4 w-full text-center">
+                              5 أسباب تجعل مُسرّعات الأعمال الاجتماعية الحل المناسب لمنظمتك
+                            </h1>
+                            <div class="flex items-center gap-5 mt-5 md:mt-10 mx-auto w-fit">
+                              <!-- <div class="w-14 h-14 rounded-full overflow-hidden">
+                                <img src="./assets/images/home-two/testimonial/sm1.webp" alt
+                                  class="w-full object-cover" />
+                              </div> -->
+                              <div>
+                                <h1 class="text-white ">
+                                  يناير 30, 2023
+                                </h1>
+                                <p class="text-sm leading-7 font-medium text-white">
+                                  by المحرر
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="relative w-fit mx-auto pt-10 md:pt-[70px] flex items-center">
+                    <div class="flex justify-between absolute w-full">
+                      <button
+                        class="h2-testimonials-prev w-[30px] h-[30px] rounded-full flex items-center justify-center bg-black-seo overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-blue-seo before:bg-blue-seo relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
+                        <svg class="relative z-10 pointer-events-none" width="12" height="10" viewBox="0 0 12 10"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                      <button
+                        class="rotate-180 h2-testimonials-next w-[30px] h-[30px] rounded-full flex items-center justify-center bg-black-seo overflow-hidden before:inline-block before:w-11 before:h-11 before:border-[1.5px] before:border-blue-seo before:bg-blue-seo relative before:absolute before:z-0 before:-right-12 hover:before:right-0 before:transition-all before:duration-300">
+                        <svg class="relative z-10 pointer-events-none" width="12" height="10" viewBox="0 0 12 10"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.75 9L1 5.25M1 5.25L4.75 1.5M1 5.25L11 5.25" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                    </div>
+                    <div class="h2-testimonial-pagination px-10"></div>
+                  </div>
+                </div>
+                <div class="col-span-2 grid-cols-2 gap-2.5 hidden xl:grid">
+
+                  <div class="col-span-1 relative">
+                    <div class="overlay-vSlider"></div>
+                    <div class="swiper vslider max-h-[472px] overflow-hidden">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r6.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r7.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r8.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r9.png" alt />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-span-1 relative my-auto">
+                    <div class="overlay-vSlider"></div>
+                    <div class="swiper vsliderSm max-h-[312px] overflow-hidden">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r6.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r7.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r8.png" alt />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./assets/images/home-two/testimonial/r9.png" alt />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+
+          <!-- <section class="relative">
+            <h1
+              class="max-w-[813px] font-semibold text-24 sm:text-48 tracking-tight text-app-dark text-center mt-2.5 md:mt-[18px]">
+              رنين في ذاكرة الأرقام
+            </h1>
+            <div class="w-full pb-16 md:pb-[130px] relative z-10">
+              <div class="theme-container mx-auto">
+                <div
+                  class="flex justify-center items-center px-4 md:px-0 py-10 md:py-20 relative border rounded-3xl border-blue-seo/20 bg-gray-seo overflow-hidden">
+
+
+
+                  <div
+                    class="p-3 sm:p-5 rounded-[30px] right-0 sm:right-32 bg-blue-seo absolute top-0 moving-h2-hero-main-img min-w-[180px]">
+                    <p class="text-sm font-medium leading-7 w-full text-center text-white">
+                      مستفيد
+                    </p>
+                    <h1 class="text-[42px] leading-[56px] tracking-tight font-semibold w-full text-center text-white"
+                      data-scroll-qs="scroll" data-count-qs="163" data-type-qs="" data-speed-qs="2000"></h1>
+                    <p class="text-base leading-6 text-white flex w-full justify-center items-center gap-1">
+                      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.65692 0.828427H9.31378M9.31378 0.828427V6.48528M9.31378 0.828427L0.828497 9.31371"
+                          stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <span> 163 </span>
+                    </p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+          </section> -->
+
+
+
+          <section class="relative">
+            <div class="w-full pb-16 md:pb-[130px] relative z-10">
+              <div class="theme-container mx-auto">
+                <div
+                  class="flex justify-center items-center px-4 md:px-0 py-10 md:py-20 relative border rounded-3xl border-blue-seo/20 bg-gray-seo overflow-hidden">
+
+                  <!-- <div class="absolute -bottom-1 -right-1 flex justify-center items-center w-2 h-2">
+                    <div class="animated_circle bg-blue-seo/10"></div>
+                    <div class="animated_circle2 bg-blue-seo/10"></div>
+                    <div class="animated_circle3 bg-blue-seo/10"></div>
+                    <div class="animated_circle4 bg-blue-seo/10"></div>
+                  </div> -->
+                  <div class="max-w-[850px] w-full flex justify-center items-center flex-col relative z-10">
+                 
+                    <h2 class="text-24 sm:text-48 font-semibold text-main-black mt-5">
+                      الأسئلة الشائعة
+                    </h2>
+
+
+
+
+
+
+
+
+
+                    <div class="flex flex-col gap-2.5 w-full mt-5 md:mt-10 p-0 sm:p-5">
+
+                      <div
+                        class="py-2.5 md:py-5 px-2 md:px-9 w-full bg-white rounded-[10px] h2-faq-toggler overflow-hidden transition-all duration-300 max-h-fit h-fit"
+                        name="faq-1">
+                        <div class="w-full flex justify-between items-center pointer-events-none h-fit">
+                          <h1 class="font-semibold sm:text-18 text-main-black">
+                            ماذا يقدم رنين ؟
+                          </h1>
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L9.5 8L17 2" stroke="#5D51F2" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <p class="mt-3.5 text-paragraph pointer-events-none h-fit">
+                             الاجابة
+                        </p>
+                      </div>
+
+
+                      <div
+                        class="py-2.5 md:py-5 px-2 md:px-9 w-full bg-white rounded-[10px] h2-faq-toggler overflow-hidden transition-all duration-300 max-h-fit"
+                        name="faq-2">
+                        <div class="w-full flex justify-between items-center pointer-events-none">
+                          <h1 class="font-semibold sm:text-18 text-main-black">
+                           السوال ؟
+                          </h1>
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L9.5 8L17 2" stroke="#5D51F2" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <p class="mt-3.5 text-paragraph pointer-events-none">
+                   الاجابة
+                        </p>
+                      </div>
+
+
+                      <div
+                        class="py-2.5 md:py-5 px-2 md:px-9 w-full bg-white rounded-[10px] h2-faq-toggler overflow-hidden transition-all duration-300 max-h-fit"
+                        name="faq-3">
+                        <div class="w-full flex justify-between items-center pointer-events-none">
+                          <h1 class="font-semibold sm:text-18 text-main-black">
+                            السوال ؟
+                          </h1>
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L9.5 8L17 2" stroke="#5D51F2" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <p class="mt-3.5 text-paragraph pointer-events-none">
+                        الاجابه
+                        </p>
+                      </div>
+
+
+                      <div
+                        class="py-2.5 md:py-5 px-2 md:px-9 w-full bg-white rounded-[10px] h2-faq-toggler overflow-hidden transition-all duration-300 max-h-fit"
+                        name="faq-4">
+                        <div class="w-full flex justify-between items-center pointer-events-none">
+                          <h1 class="font-semibold sm:text-18 text-main-black">
+                            السوال ؟
+                          </h1>
+                          <svg width="19" height="10" viewBox="0 0 19 10" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L9.5 8L17 2" stroke="#5D51F2" stroke-width="3" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                          </svg>
+                        </div>
+                        <p class="mt-3.5 text-paragraph pointer-events-none">
+                        الاجابه
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between absolute top-32">
+              <div id="h2-faq-anim-left"></div>
+              <div class="transform rotate-180" id="h2-faq-anim-right"></div>
+            </div>
+          </section>
+
+
+
+
+        </main>
+
+
+        <footer class="pt-20 bg-black-seo relative overflow-hidden">
+
+        
+          
+          <div class="theme-container mx-auto   mb-20 ">
+            <div class="col-span-3">
+             
+              <img src="./assets/images/home-two/logo.png" width="30%" alt="logo" />
+
+      
+            </div>
+       
+          </div>
+          <div class="absolute -right-[268px] top-[132px]">
+            <img src="./assets/images/home-two/footer-shape.png" alt="footer" />
+          </div>
+          <div class="w-full h-[80px] md:h-[65px] bg-[#323239] relative z-10">
+            <div class="theme-container mx-auto h-full">
+              <div class="w-full h-full flex flex-col sm:flex-row justify-between items-center">
+                <span class="text-white/50 pt-3 md:pt-0">© جميع الحقوق محفوظة، شركة  رنيين
+                  </span>
+                <!-- <div class="relative">
+                  <a href="#" aria-label="go top"
+                    class="w-[45px] h-[45px] rounded-full border-[3px] border-[#323239] flex justify-center items-center bg-blue-sass absolute -top-[70px] md:-top-[55px]">
+                    <span>
+                      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="22.5" cy="22.5" r="21" fill="#4A7DFF" stroke="#323239" stroke-width="3" />
+                        <path d="M19 21L23 17M23 17L27 21M23 17V29" stroke="white" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                  </a>
+                </div> -->
+                <ul class="flex sm:space-x-6 items-center">
+                  <li class="hover:text-white hover:underline common-transition text-paragraph font-medium">
+                    <a href="#">رنين تك</a>
+                  </li>
+                  <li class="text-paragraph font-medium"></li>
+                  <li class="hover:text-white hover:underline common-transition text-paragraph font-medium">
+                    <a href="#">حاظنة جدارة</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="./assets/js/jquery-3.6.3.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/lottie.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/gsap.min.js"></script>
+  <script src="./assets/js/ScrollTrigger.min.js"></script>
+  <script src="./assets/js/ScrollSmoother.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
